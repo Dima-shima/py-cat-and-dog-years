@@ -34,8 +34,8 @@ class TestRaisingErrors:
                          id="should raise error if arguments Very big"),
         ]
     )
-    def test_raising_errors_correctly\
-                    (self, cat_age: int, dog_age: int,
-                     expected_error: type[ValueError]) -> None:
+    def test_raising_errors_correctly(self, cat_age: int, dog_age: int,
+                                      expected_error:
+                                      type[ValueError]) -> None:
         with pytest.raises(expected_error):
             get_human_age(cat_age, dog_age)

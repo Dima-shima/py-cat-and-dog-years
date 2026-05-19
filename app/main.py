@@ -14,7 +14,7 @@ def get_human_age(cat_age: int, dog_age: int) -> list:
     if 15 <= dog_age < 24:
         dog_human_age = 1
     if 24 <= cat_age:
-        cat_human_age = int(2 + (cat_age - 24)/4)
+        cat_human_age = int(2 + (cat_age - 24) / 4)
     if 24 <= dog_age:
-        dog_human_age = int(2 + (cat_age - 24)/5)
-    return[cat_human_age, dog_human_age]
+        dog_human_age = int(2 + (cat_age - 24) / 5)
+    return [cat_human_age, dog_human_age]
